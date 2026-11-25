@@ -1,0 +1,5 @@
+{"host":"galaxy.example.org","input":"example.org","sources":["crtname"]}
+{"host":"ldap.example.org","input":"example.org","sources":["crtname"]}
+{"host":"sep-poly.example.org","input":"example.org","sources":["crtname"]}
+{"host":"buster.example.org","input":"example.org","sources":["thc"]}
+{"host":"app.ubiquitous.example.org","input":"example.org","sources":["crtname"]}
