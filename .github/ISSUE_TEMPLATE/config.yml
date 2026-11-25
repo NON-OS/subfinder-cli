@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Vulnerabilità di sicurezza
+    url: https://github.com/NON-OS/subfinder-cli/security/advisories/new
+    about: Per un controllo aggirabile usa la segnalazione privata, non una issue pubblica.
