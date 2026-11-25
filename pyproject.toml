@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subfinder-cli"
+version = "0.2.0"
+description = "Enumerazione passiva di sottodomini con scope validato, dry-run di default e audit a catena di hash."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "NØNOS" }]
+keywords = ["subfinder", "pentest", "scope", "audit", "security", "cli", "recon"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy", "coverage"]
+
+[project.urls]
+Homepage = "https://github.com/NON-OS/subfinder-cli"
+Documentation = "https://github.com/NON-OS/subfinder-cli/tree/main/docs"
+Issues = "https://github.com/NON-OS/subfinder-cli/issues"
+Changelog = "https://github.com/NON-OS/subfinder-cli/blob/main/CHANGELOG.md"
+
+[project.scripts]
+subfinder-cli = "subfindercli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+subfindercli = ["py.typed"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+"src/*/spec.py" = ["E501"]
+
+[tool.mypy]
+strict = true
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+exclude_also = ["if __name__ == .__main__.:"]
