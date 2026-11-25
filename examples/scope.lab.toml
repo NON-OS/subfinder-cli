@@ -1,0 +1,11 @@
+# Scope per il lab in lab/docker-compose.yml. Aggiorna le date prima di usarlo.
+
+[engagement]
+nome = "lab-locale"
+autorizzato_da = "NØNOS, proprietario del lab"
+riferimento = "LAB-LOCALE"
+valido_dal = 2026-01-01
+valido_fino = 2026-12-31
+
+[scope]
+include = ["172.28.0.10", "172.28.0.11"]
