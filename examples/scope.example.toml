@@ -1,0 +1,17 @@
+# Esempio da copiare e modificare. Gli indirizzi sono quelli riservati alla documentazione (RFC 5737),
+# i domini usano example.org: non appartengono a nessuno e non autorizzano niente di reale.
+
+[engagement]
+nome = "ESEMPIO"
+autorizzato_da = "Nome Cognome, ruolo, azienda"
+riferimento = "CONTRATTO-0000"
+valido_dal = 2026-01-01
+valido_fino = 2026-01-31
+
+[scope]
+include = [
+    "example.org",
+]
+esclude = [
+    "interno.example.org",
+]
