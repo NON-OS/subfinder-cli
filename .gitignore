@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+# output delle scansioni e audit locali: non vanno mai nel repo
+out/
+*.audit.jsonl
+scope.toml
